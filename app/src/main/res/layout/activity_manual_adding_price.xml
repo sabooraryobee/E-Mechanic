@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@color/background"
+    tools:context=".OnSopteSale.ManualAddingPrice">
+
+    <!-- Text view for result view-->
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/custom_input"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <!--take the input first number-->
+    <EditText
+        android:id="@+id/manual_price"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_input"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+    <!-- for messege input first number-->
+    <TextView
+        android:id="@+id/textView_manual_function"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Manual Functions Price"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/button_rounded1"
+        android:text="Calculate" />
+
+
+</RelativeLayout>

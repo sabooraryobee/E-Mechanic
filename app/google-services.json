@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "300037071685",
+    "firebase_url": "https://e-mechanicdb-default-rtdb.firebaseio.com",
+    "project_id": "e-mechanicdb",
+    "storage_bucket": "e-mechanicdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300037071685:android:fc5ce3a6c6b08694f9d42c",
+        "android_client_info": {
+          "package_name": "com.example.aryobee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300037071685-f4ve4a6lik5pf6s5kevse27vopp7fjc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN1MzpTD0Ok5n9fryT81O691npVYj_Ca4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300037071685-f4ve4a6lik5pf6s5kevse27vopp7fjc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

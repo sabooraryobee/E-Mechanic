@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingVertical="10dp"
+    android:layout_gravity="start"
+    android:paddingTop="10dp"
+    android:paddingEnd="70dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    android:elevation="1dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/grey"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:paddingEnd="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginLeft="10dp">
+        <!--android:background="@drawable/chat_formating_passenger"-->
+
+        <TextView
+            android:id="@+id/others_message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="5dp"
+            android:text="How are you doing? This is a long message that should probably wrap."
+            android:textAlignment="viewStart"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/other_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

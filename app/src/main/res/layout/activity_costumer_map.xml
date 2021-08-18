@@ -1,0 +1,267 @@
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edPosition="1"
+    app:edMenuSize="260dp"
+    app:edMenuBackground="#dddddd"
+    tools:context="com.example.aryobee.MapActivity.CustomerMapActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/iv_Menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/menu"
+            app:tint="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:foregroundGravity="bottom"
+            android:orientation="vertical"
+            android:id="@+id/request_layout"
+            >
+
+            <Button
+                android:id="@+id/request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="call Mechanic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@id/request_layout"
+            android:layout_marginBottom="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechanicInfo"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/mechanicProfileImage"
+                    android:src="@mipmap/ic_default_user"
+                    android:padding="20sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="40sp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mechanicName"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="20sp"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mechanicPhone"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="20sp"
+                        android:textColor="@color/black"
+                        android:text=""
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mechanicCar"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="20sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+            <!--menu-->
+            <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+                android:id="@+id/menulayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/herder"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profi"
+                            />
+
+                        <LinearLayout
+                            android:background="@drawable/unsplash"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:fontFamily="@font/amita_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:gravity="center"
+                                android:text="@string/app_name"
+                                android:textSize="30dp"
+                                android:textColor="@color/white"/>
+
+
+                            <TextView
+                                android:fontFamily="@font/amita_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="16dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/white"
+                                android:id="@+id/customerprofile_name"
+                                />
+
+                            <TextView
+                                android:fontFamily="@font/amita_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="16dp"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:id="@+id/customerprofile_phone"
+                                />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_below="@+id/herder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/buttons"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp">
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/history"
+                                    android:text="History"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="start"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/settings"
+                                    android:text="Settings"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="start"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/cmsg"
+                                    android:text="Message"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="start"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/about"
+                                    android:text="About"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="start"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/logout"
+                                    android:text="logout"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="start"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/customer_pp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/profi"
+                        android:layout_marginTop="-50dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/herder"/>
+                </RelativeLayout>
+            </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+        </com.mxn.soul.flowingdrawer_core.FlowingDrawer>
+

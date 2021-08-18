@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".OnSopteSale.OnSpoteSale">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:text="@string/spote_msg"
+        android:gravity="center_horizontal" />
+
+    <CheckBox
+        android:id="@+id/cbb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warning Lights - 100Af"
+        android:textColor="@color/black"
+        android:onClick="onCheckBoxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/cbb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckBoxClicked"
+        android:text="Brakes Squeaking or Grinding - 200Af"
+        android:textColor="@color/black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckBoxClicked"
+        android:textColor="@color/black"
+        android:text="Flat Tires - 300Af"
+        />
+
+    <!-- for messege input first number-->
+    <!--
+    <TextView
+        android:id="@+id/textView_manual_function"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Manual Functions Price"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+-->
+    <!--take the input first number-->
+  <!--
+    <EditText
+        android:id="@+id/manual_price"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_input"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+-->
+
+  <TextView
+      android:id="@+id/charges1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="33dp"
+      android:layout_marginTop="22dp"
+      android:text="50 Af Charges Wll be Add"
+      android:textColor="@color/black"
+      android:textStyle="bold"/>
+
+
+  <TextView
+      android:id="@+id/total"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="33dp"
+      android:layout_marginLeft="33dp"
+      android:layout_marginTop="22dp"
+      android:text="Total Price"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+  <Button
+      android:id="@+id/next_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Next"
+      android:textSize="22sp"
+      android:textColor="#ffffff"
+      android:layout_marginTop="80dp"
+      android:background="@drawable/button_rounded1"
+      />
+
+</LinearLayout>
